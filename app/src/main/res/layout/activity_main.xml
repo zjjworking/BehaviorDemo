@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/depentent"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:layout_gravity="top|left"
+        android:text="depentent"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:layout_gravity="bottom|right"
+        app:layout_behavior="com.zjj.behaviordemo.DependencyBehavior"
+        android:text="auto"/>
+
+    <TextView
+        android:id="@+id/swip"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:background="#32CD32"
+        android:layout_gravity="center"
+        android:text="别删我"
+        android:textSize="20dip"
+        android:gravity="center"
+        />
+
+</android.support.design.widget.CoordinatorLayout>
